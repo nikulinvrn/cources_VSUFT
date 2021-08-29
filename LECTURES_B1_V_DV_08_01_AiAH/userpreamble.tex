@@ -1,0 +1,24 @@
+% Файл для записи пользовательских настроек. 
+%
+%
+
+%\usepackage[13pt]{extsizes}
+
+%\documentclass[a4paper,12pt]{extreport}
+\documentclass[a4paper,14pt]{extreport}
+
+\newlength{\curtextsize}
+\newlength{\bigtextsize}
+\setlength{\bigtextsize}{13.9pt}
+
+
+\makeatletter
+\show\f@size
+\setlength{\curtextsize}{\f@size pt}
+\makeatother
+
+\ifnum\curtextsize>\bigtextsize
+\usepackage[small]{titlesec}
+\fi
+
+\usepackage[a4paper,left=2.5cm, right=1.5cm, top=2.5cm, bottom=2.5cm]{geometry}
