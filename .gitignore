@@ -1,4 +1,6 @@
-ore latex/pdflatex auxiliary files:
+lecture_template/
+
+## ore latex/pdflatex auxiliary files:
 *.aux
 *.lof
 *.log
